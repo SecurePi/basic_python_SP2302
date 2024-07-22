@@ -1,4 +1,6 @@
 # Example of using the MQTT client class to publish feed values.
+# Based on m3y54m paho mqtt adafruit IO codes
+#Github Link: https://github.com/m3y54m/paho-mqtt-client
 
 # Import standard python modules.
 import random
