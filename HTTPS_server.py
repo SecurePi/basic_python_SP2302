@@ -3,15 +3,15 @@ import ssl
 
 # Define the HTTP request handler class
 class RequestHandler(BaseHTTPRequestHandler):
-    
+
     def do_GET(self):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        self.wfile.write(b"Hello, HTTPS!")
+        self.wfile.write(b"Hello, This is SP2302 HTTPS server!")
 
 # Server settings
-host = '10.0.1.149'
+host = '10.0.1.159'
 port = 8443
 
 # Generate SSL context
