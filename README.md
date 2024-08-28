@@ -1,2 +1,2 @@
-# basic_python_mh1905
-Basic Python codes for MH1905EVB
+# basic_python_SP2302
+Basic Python codes for SP2302
