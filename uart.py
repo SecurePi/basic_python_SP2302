@@ -15,12 +15,10 @@ def serial_read(port, baud_rate, timeouts):
     data = ""
     try:
         while True:
-            if ser.in_waiting > 0:
-                data += ser.read(ser.in_waiting).decode('ascii')
-                if data.endswith('\r'):
-                    print(data)
-                    ser.write(data.encode('utf-8'))
-                    data = ""
+            data = ser.readline()
+            print(data)
+            ser.write(data.encode('utf-8'))
+            data = ""
     except KeyboardInterrupt:
         print("Interrupted by user！")
     finally:
